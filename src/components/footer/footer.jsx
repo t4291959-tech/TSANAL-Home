@@ -10,7 +10,7 @@ import styles from './footer.css';
 const messages = defineMessages({
     notaffiliatedText: {
         id: "home.footer.notaffiliated",
-        defaultMessage: 'DinosaurMod is not affiliated with Scratch, TurboWarp, PenguinMod, the Scratch Team, or the Scratch Foundation.',
+        defaultMessage: 'Tsanal is not affiliated with Scratch, TurboWarp, PenguinMod, Dinosaurmod, the Scratch Team, or the Scratch Foundation.',
         description: 'not affiliated text'
     },
     websiteText: {
@@ -65,18 +65,18 @@ const FooterComponent = function (props) {
 
     return (
         <footer className="footer">
-            <h1>{Utils.formatMessage(messages.notaffiliatedText, intl, "DinosaurMod is not affiliated with Scratch, TurboWarp, PenguinMod, the Scratch Team, or the Scratch Foundation.")}</h1>
+            <h1>{Utils.formatMessage(messages.notaffiliatedText, intl, "Tsanal is not affiliated with Scratch, TurboWarp, PenguinMod, DinosaurMod, the Scratch Team, or the Scratch Foundation.")}</h1>
             <div className="footer-row">
                 <h3>{Utils.formatMessage(messages.websiteText, intl, "Website")}</h3>
-                <a href="https://dinosaurmod.github.io/editor.html">{Utils.formatMessage(messages.row1EditorText, intl, "Editor")}</a>
-                <a href="https://dinosaurmod.github.io/credits.html">{Utils.formatMessage(messages.row1CreditsText, intl, "Editor")}</a>
-                <a href="/Dino-Home/examples">{Utils.formatMessage(messages.row1ExamplesText, intl, "Editor")}</a>
-                <a href="https://github.com/Dinosaurmod">{Utils.formatMessage(messages.row1SourceText, intl, "Editor")}</a>
-                <a href="https://dinosaurmod.betteruptime.com/">{Utils.formatMessage(messages.row1StatusText, intl, "Editor")}</a>
+                <a href="https://Alpha.tsanalr.org/editor.html">{Utils.formatMessage(messages.row1EditorText, intl, "Editor")}</a>
+                <a href="https://Alpha.tsanalr.org/credits.html">{Utils.formatMessage(messages.row1CreditsText, intl, "Editor")}</a>
+                <a href="/examples">{Utils.formatMessage(messages.row1ExamplesText, intl, "Editor")}</a>
+                <a href="https://github.com/t4291959-tech/TSANAL-Home">{Utils.formatMessage(messages.row1SourceText, intl, "Editor")}</a>
+                <a href="https://tsanal.betteruptime.com/">{Utils.formatMessage(messages.row1StatusText, intl, "Editor")}</a>
             </div>
             <div className="footer-row">
                 <h3>{Utils.formatMessage(messages.communityText, intl, "Community")}</h3>
-                <a href="https://github.com/Dinosaurmod/dino-home/issues">{Utils.formatMessage(messages.row2IssueText, intl, "Editor")}</a>
+                <a href="https://github.com/t4291959-tech/TSANAL-Home/issues">{Utils.formatMessage(messages.row2IssueText, intl, "Editor")}</a>
             </div>
             <div className="footer-row">
                 <h3>{Utils.formatMessage(messages.donateText, intl, "Donate")}</h3>
@@ -93,4 +93,5 @@ FooterComponent.propTypes = {
 };
 
 const IntlFooter = injectIntl(FooterComponent);
+
 export default (IntlFooter);
