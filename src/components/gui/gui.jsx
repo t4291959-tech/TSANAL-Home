@@ -27,12 +27,12 @@ const pathname = window.location.pathname;
 const messages = defineMessages({
     homePageText: {
         id: "home.section.welcomemessage",
-        defaultMessage: 'Welcome to the Home Page of DinosaurMod!',
+        defaultMessage: 'Welcome to the Tsanal site!',
         description: 'welcome text'
     },
     examplesPageText: {
         id: "home.section.examplesmessage",
-        defaultMessage: 'Welcome to the Examples Page of DinosaurMod!',
+        defaultMessage: 'Welcome to the Examples Page of Tsanal site!',
         description: 'examples text'
     },
 })
@@ -92,7 +92,7 @@ const GUIComponent = props => {
                     />
                     <section>
                         <h1>{BRAND_NAME}</h1>
-                        <p>{isExamplesPage ? Utils.formatMessage(messages.examplesPageText, intl, "Welcome to the Examples Page of DinosaurMod!") : Utils.formatMessage(messages.homePageText, intl, "Welcome to the Home Page of DinosaurMod!")}</p>
+                        <p>{isExamplesPage ? Utils.formatMessage(messages.examplesPageText, intl, "Welcome to the Examples Page of Tsanal site!") : Utils.formatMessage(messages.homePageText, intl, "Welcome to the Home Page of DinosaurMod!")}</p>
                     </section>
                     {(!!isExamplesPage && (
                         <React.Fragment>
@@ -135,5 +135,6 @@ const GUIComponent = props => {
 GUIComponent.propTypes = {
     intl: intlShape
 }
+
 
 export default injectIntl(GUIComponent);
