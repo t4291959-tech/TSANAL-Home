@@ -1,2 +1,2 @@
-# Dino-Home
-This is home of dinosaurmod.
+# TSANAL-Home
+This is home of Tsanal.
