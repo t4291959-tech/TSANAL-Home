@@ -92,7 +92,7 @@ const GUIComponent = props => {
                     />
                     <section>
                         <h1>{BRAND_NAME}</h1>
-                        <p>{isExamplesPage ? Utils.formatMessage(messages.examplesPageText, intl, "Welcome to the Examples Page of Tsanal site!") : Utils.formatMessage(messages.homePageText, intl, "Welcome to the Home Page of DinosaurMod!")}</p>
+                        <p>{isExamplesPage ? Utils.formatMessage(messages.examplesPageText, intl, "Welcome to the Examples Page of Tsanal site!") : Utils.formatMessage(messages.homePageText, intl, "Welcome to the TSANAL Site!")}</p>
                     </section>
                     {(!!isExamplesPage && (
                         <React.Fragment>
